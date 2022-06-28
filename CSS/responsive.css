@@ -35,6 +35,9 @@
     }
 }
 @media (max-width: 630px) {
+    body {
+        overflow-x: hidden;
+    }
 
     .menu-button-container {
         display: flex;
@@ -45,11 +48,12 @@
         position: absolute; /*mantem o menu no topo da pg*/
         margin-top: 30px;
         flex-direction: column;
-        width: 100vw;
+        width: 97vw;
         justify-content: center;
         align-items: center;
-        left: 100%;
-        transform: translateX(100vw);
+        right: -.7%;
+        /* left: 100%;
+        transform: translateX(100vw); */
         transition: .5s ease transform;
     }
 
@@ -62,10 +66,10 @@
         width: 100%;
     }
 
-    #checkbox-menu:checked~nav .menu {
+    /* #checkbox-menu:checked~nav .menu {
         transform: translateX(-100vw);
         transition: .5s ease transform;
-    }
+    } */
 
     .menu li {
         display: flex;
